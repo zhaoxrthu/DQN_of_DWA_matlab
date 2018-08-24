@@ -7,5 +7,8 @@ learning the weight of each paras in DWA(Dynamic Window Approach) by using DQN(D
   直接运行DQN.m即可。
   
 ## 3、文件与参数说明
+###   3.1 DQN.m
+  主训练函数，负责调用Agent与Environment的各个模块；训练时直接运行该文件即可。
+  
   
 
