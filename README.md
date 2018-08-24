@@ -12,7 +12,8 @@ learning the weight of each paras in DWA(Dynamic Window Approach) by using DQN(D
   
 ## 3、文件与参数说明
 ### 　3.1 DQN.m
-　主训练函数，负责调用Agent与Environment的各个模块；训练时直接运行该文件即可。  
+　主训练函数，负责调用Agent与Environment的各个模块；训练时直接运行该文件即可。 
+ &nbsp;
 
 ### 　3.2 Agent/
 　对应RL（增强学习）中的Agent模块，完成学习网络的建立（新建或加载已有模型），DWA参数预测（前向传播）与更新。
@@ -24,7 +25,8 @@ learning the weight of each paras in DWA(Dynamic Window Approach) by using DQN(D
 #### 　　3.2.3 NetSetUp.m & CreateNeuralNetneural.m
 　　　卷积神经网络的建立与定义，参照了[DeepLearnToolbox](https://github.com/rasmusbergpalm/DeepLearnToolbox)并进行了部分修改。
 #### 　　3.2.4 ForwardPro.m & BackPro.m
-　　　神经网络的前向传播与残差的后向传播，参照了[DeepLearnToolbox](https://github.com/rasmusbergpalm/DeepLearnToolbox)并进行了部分修改；可支持多通道、batch训练。  
+　　　神经网络的前向传播与残差的后向传播，参照了[DeepLearnToolbox](https://github.com/rasmusbergpalm/DeepLearnToolbox)并进行了部分修改；可支持多通道、batch训练。 
+   &nbsp;
   
 
 ###  　3.3 Environment/
@@ -38,13 +40,16 @@ learning the weight of each paras in DWA(Dynamic Window Approach) by using DQN(D
 　　　随机在地图上生成起始点和终点，要求避免两者距离太小或有一在障碍物中的情况。
 #### 　　3.2.4 GetCurSurOb.m
 　　　按照坐标得到小车周围的障碍物信息。  
+   &nbsp;
  
 ### 　3.4 Model/
-　　由DQN.m保存的当前模型参数信息，文件名为保存模型时的时间戳，可通过修改DQN.m中调用CreateNeuralNetneural.m的形式决定加载已有模型进行训练或者创建一个新模型。  
+　　由DQN.m保存的当前模型参数信息，文件名为保存模型时的时间戳，可通过修改DQN.m中调用CreateNeuralNetneural.m的形式决定加载已有模型进行训练或者创建一个新模型。 
+  &nbsp;
   
 ### 　3.5 Ob.png
 　　仿真的障碍物信息，可根据需要修改。
 　　约定：白色（高像素值）部分为障碍物，黑色（低像素值）部分为可行区域。  
+  &nbsp;
   
 ## 4、其他
   目前尚未得到较好的训练结果。  
