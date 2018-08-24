@@ -9,11 +9,11 @@ learning the weight of each paras in DWA(Dynamic Window Approach) by using DQN(D
   
   
 ## 3、文件与参数说明
-### 　　3.1 DQN.m
-　　主训练函数，负责调用Agent与Environment的各个模块；训练时直接运行该文件即可。  
+### 　3.1 DQN.m
+　主训练函数，负责调用Agent与Environment的各个模块；训练时直接运行该文件即可。  
 
-### 　　3.2 Agent/
-　　对应RL（增强学习）中的Agent模块，完成学习网络的建立（新建或加载已有模型），DWA参数预测（前向传播）与更新。
+### 　3.2 Agent/
+　对应RL（增强学习）中的Agent模块，完成学习网络的建立（新建或加载已有模型），DWA参数预测（前向传播）与更新。
   
 #### 　　　　3.2.1 AgentOutput.m
 　　通过cnn（卷积神经网络），由当前的状态得到此时各个选择的Q值，进而得到当前状态下的参数。    
